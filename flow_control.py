@@ -33,8 +33,23 @@ else:
 # for i in range(1,10):
 #     print(i)
 
-for i in range(1,10,2):
-    print(i)
+# for i in range(1,10,2):
+#     print(i)
+
+while True:
+    print("who are you?")
+    name=input()
+    if name!='batman':
+        continue
+    print('there name is '+name+ 'what is your passcode')
+    pasecode=input()
+    if pasecode=='nullvalue':
+        break
+print('hello')
+
+
+
+
 
     
 
