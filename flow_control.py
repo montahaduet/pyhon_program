@@ -36,19 +36,68 @@ else:
 # for i in range(1,10,2):
 #     print(i)
 
-while True:
-    print("who are you?")
-    name=input()
-    if name!='batman':
-        continue
-    print('there name is '+name+ 'what is your passcode')
-    pasecode=input()
-    if pasecode=='nullvalue':
-        break
-print('hello')
+# while True:
+#     print("who are you?")
+#     name=input()
+#     if name!='batman':
+#         continue
+#     print('there name is '+name+ 'what is your passcode')
+#     pasecode=input()
+#     if pasecode=='nullvalue':
+#         break
+# print('hello')
 
 
 
+#-----------------leap year------------------------
+# year=int(input('enter the yaer: '))
+# if year%400==0:
+#     print('year is a leap year ')
+# elif(year%100!=0):
+#     print('not leap year')
+# elif(year%4==0):
+#     print('leap year')
+# else:
+#     print('not leap year')
+
+#____________   
+#    * 
+#   ***
+#  *****
+# ******* pattern  program__________
+
+# row=int(input())
+# count=0
+# for i in range(row):
+#     for j in range(row-i-1):
+#         print(end=" ")
+#     count=count+1
+#     for k in range(i+count):
+#         print("*",end="")
+#     print(" ")            
+
+
+#    * 
+#   **
+#  ***
+# ****
+
+row=int(input())
+
+for i in range(row):
+    for j  in range(row-i-1):
+        print(end=" ")
+     
+    for k in range(i+1):
+        print("*",end="")
+    print(" ")    
+
+
+
+
+
+#---------------armsrong -------------------------
+# num=int(input())
 
 
     
