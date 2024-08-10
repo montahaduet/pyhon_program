@@ -47,17 +47,14 @@ class HouseBot(Robot):
         super().move_forward()    
 
 housebot=HouseBot('Bob',1.1,50)
+robo=Robot('stan lee',1.5)
 
-print(housebot.name)
-print(housebot.version)
+# print(help(Robot))
+# print(help(list))
 
-housebot.move_forward()
-housebot.moving_right()
-housebot.clean()
-housebot.clean()
-housebot.clean()
-print(housebot.area_covered)
-housebot.set_cover_area(50)
-housebot.clean()
+# print(help(housebot))
 
-
+print(issubclass(HouseBot,Robot))
+print(issubclass(Robot,HouseBot))
+print(issubclass(Robot,object))
+print(issubclass(HouseBot,object))
