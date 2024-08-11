@@ -44,7 +44,16 @@ class HouseBot(Robot):
 
     def move_forward(self):
         print('this is an house bot class!')
-        super().move_forward()    
+        super().move_forward() 
+
+
+class MaidBot(HouseBot):
+    def __init__(self, name, version, area_covered,cooking):
+        super().__init__(name, version, area_covered)
+        self.cooking=cooking    
+m=MaidBot('gantel',1.3,100,'cake')
+
+print(m.cooking)
 
 housebot=HouseBot('Bob',1.1,50)
 robo=Robot('stan lee',1.5)
@@ -54,7 +63,13 @@ robo=Robot('stan lee',1.5)
 
 # print(help(housebot))
 
-print(issubclass(HouseBot,Robot))
-print(issubclass(Robot,HouseBot))
-print(issubclass(Robot,object))
-print(issubclass(HouseBot,object))
+# print(issubclass(HouseBot,Robot))
+# print(issubclass(Robot,HouseBot))
+# print(issubclass(Robot,object))
+# print(issubclass(HouseBot,object))
+
+# print(isinstance(housebot,Robot))
+# print(isinstance(housebot,HouseBot))
+# print(isinstance(housebot,object))
+# print(isinstance(robo,object))
+
